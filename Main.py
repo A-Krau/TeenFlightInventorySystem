@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     #Dictionary used for testing
     TestDic = {
-        'Aric': {
+        'ric': {
             'Password': '123',
             'Admin': True
         },

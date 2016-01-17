@@ -36,7 +36,7 @@ class HumanUI():
                         self.Attempts = self.Attempts + 1
                         print('You have ' +  str(self.PasswordTrys - self.Attempts) + ' Attempts remaining.')
                         if self.Attempts == self.PasswordTrys:
-                            print('User locked out.')
+                            print('User lock out.')
                             self.LogOut()
                             return
                 else:
@@ -80,7 +80,7 @@ class HumanUI():
 
     def GetParts(self):
         self.PartNumber = input('What part are you looking for:').upper()
-        if self.PartsDatabse(self.Partnumber):
+        if self.PartsDatabse.PartCheck(self.PartNumber):
             self.PartQty = input('How many do you need?')
             try:
                 self.PartQty = int(self.PartQty)
@@ -108,7 +108,7 @@ class HumanUI():
         self.UserId = None
         self.UserPassword = None
         self.Attempts = 0
-        print('Session Ended\n')
+        print('Session ended\n')
 
 
 #Check Point
